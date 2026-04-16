@@ -14,222 +14,167 @@
         
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: #e5e7eb;
-            background: #0f0f0f;
+            line-height: 1.7;
+            color: #1f2937;
+            background: #ffffff;
         }
         
         .container {
-            max-width: 1100px;
+            max-width: 720px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1.5rem;
         }
         
-        /* Hero Section */
+        /* Hero / Hook Section */
         .hero {
-            padding: 6rem 0 4rem;
+            padding: 5rem 0 3rem;
             text-align: center;
-            background: linear-gradient(180deg, #0f0f0f 0%, #1a1a2e 100%);
+            background: linear-gradient(180deg, #fef3c7 0%, #ffffff 100%);
         }
         
         .hero-label {
             display: inline-block;
-            background: rgba(99, 102, 241, 0.15);
-            color: #818cf8;
+            background: #f59e0b;
+            color: white;
             padding: 0.5rem 1rem;
             border-radius: 50px;
-            font-size: 0.875rem;
-            font-weight: 500;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
             margin-bottom: 1.5rem;
-            border: 1px solid rgba(99, 102, 241, 0.3);
         }
         
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             font-weight: 800;
-            color: #ffffff;
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
-        }
-        
-        .hero h1 span {
-            display: block;
-            color: #818cf8;
+            color: #1f2937;
+            line-height: 1.2;
+            margin-bottom: 1rem;
         }
         
         .hero-subtitle {
             font-size: 1.25rem;
-            color: #9ca3af;
+            color: #6b7280;
             max-width: 600px;
             margin: 0 auto 2rem;
-            line-height: 1.6;
         }
         
-        /* Video Placeholder */
-        .video-section {
-            margin: 2rem 0;
+        /* Story Section */
+        .story-section {
+            padding: 4rem 0;
+            background: #ffffff;
         }
         
-        .video-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
-            border-radius: 16px;
-            overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        
-        .video-placeholder {
-            aspect-ratio: 16/9;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .video-placeholder:hover {
-            background: rgba(99, 102, 241, 0.1);
-        }
-        
-        .play-button {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #6366f1, #8b5cf6);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1rem;
-            box-shadow: 0 10px 40px rgba(99, 102, 241, 0.4);
-            transition: transform 0.3s ease;
-        }
-        
-        .play-button:hover {
-            transform: scale(1.1);
-        }
-        
-        .play-button svg {
-            width: 32px;
-            height: 32px;
-            color: white;
-            margin-left: 4px;
-        }
-        
-        .video-caption {
-            color: #9ca3af;
-            font-size: 0.95rem;
-        }
-        
-        /* CTA Button */
-        .cta-section {
-            margin-top: 2rem;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #6366f1, #8b5cf6);
-            color: white;
-            padding: 1.25rem 3rem;
+        .story-section p {
             font-size: 1.125rem;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(99, 102, 241, 0.4);
-            transition: all 0.3s ease;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
         }
         
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 50px rgba(99, 102, 241, 0.5);
+        .story-section p:first-child::first-letter {
+            font-size: 4rem;
+            font-weight: 800;
+            color: #f59e0b;
+            float: left;
+            line-height: 1;
+            padding-right: 0.5rem;
+            margin-top: -0.5rem;
         }
         
-        .cta-note {
-            margin-top: 1rem;
-            font-size: 0.875rem;
-            color: #6b7280;
+        /* Transformation Section */
+        .transformation {
+            padding: 4rem 0;
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e5e7eb;
         }
         
-        /* Section Styling */
-        .section {
-            padding: 5rem 0;
-        }
-        
-        .section-dark {
-            background: #0f0f0f;
-        }
-        
-        .section-light {
-            background: #1a1a2e;
-        }
-        
-        .section h2 {
-            font-size: 2.25rem;
+        .transformation h2 {
+            font-size: 2rem;
             font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 3rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
             text-align: center;
         }
         
-        .section h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #ffffff;
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .before, .after {
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+        
+        .before {
+            background: #fee2e2;
+            border-left: 4px solid #ef4444;
+        }
+        
+        .after {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+        }
+        
+        .before h4, .after h4 {
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-transform: uppercase;
             margin-bottom: 0.75rem;
         }
         
-        /* Challenge Grid */
-        .challenge-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
+        .before h4 { color: #dc2626; }
+        .after h4 { color: #059669; }
         
-        .challenge-card {
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 12px;
-            padding: 1.5rem;
-        }
-        
-        .challenge-card h4 {
-            color: #f87171;
-            font-size: 0.875rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.5rem;
-        }
-        
-        .challenge-card p {
-            color: #9ca3af;
+        .before p, .after p {
+            color: #4b5563;
             font-size: 0.95rem;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         
-        /* Steps */
-        .steps-container {
-            margin-top: 2rem;
+        /* Mechanism Section */
+        .mechanism {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+        
+        .mechanism h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .mechanism-intro {
+            text-align: center;
+            color: #6b7280;
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+        }
+        
+        .steps {
+            margin: 2rem 0;
         }
         
         .step {
             display: flex;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: rgba(255,255,255,0.02);
-            border-radius: 12px;
-            border-left: 3px solid #6366f1;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1.25rem;
+            background: #f9fafb;
+            border-radius: 10px;
         }
         
         .step-number {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            width: 36px;
+            height: 36px;
+            background: #f59e0b;
             color: white;
             border-radius: 50%;
             display: flex;
@@ -240,424 +185,302 @@
         }
         
         .step-content h4 {
-            color: #ffffff;
-            font-size: 1.125rem;
+            color: #1f2937;
             font-weight: 600;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
         }
         
         .step-content p {
-            color: #9ca3af;
+            color: #6b7280;
             font-size: 0.95rem;
-            line-height: 1.5;
         }
         
-        /* Features List */
-        .features-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-top: 2rem;
+        /* Offer Section */
+        .offer {
+            padding: 4rem 0;
+            background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+            color: white;
+            text-align: center;
         }
         
-        .feature-item {
+        .offer h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .offer-subtitle {
+            color: #9ca3af;
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+        }
+        
+        .offer-box {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .offer-list {
+            text-align: left;
+            margin: 1.5rem 0;
+        }
+        
+        .offer-item {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             gap: 0.75rem;
-            padding: 1rem;
-            background: rgba(255,255,255,0.02);
-            border-radius: 8px;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            color: #d1d5db;
+            font-size: 0.95rem;
         }
         
-        .feature-check {
+        .offer-item:last-child {
+            border-bottom: none;
+        }
+        
+        .check-icon {
             width: 20px;
             height: 20px;
-            background: linear-gradient(135deg, #10b981, #34d399);
+            background: #10b981;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            margin-top: 2px;
         }
         
-        .feature-check svg {
+        .check-icon svg {
             width: 12px;
             height: 12px;
             color: white;
         }
         
-        .feature-item span {
-            color: #d1d5db;
-            font-size: 0.95rem;
+        .price-row {
+            margin: 1.5rem 0;
         }
         
-        /* Value Stack */
-        .value-section {
-            background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
-            border-radius: 20px;
-            padding: 3rem;
-            margin: 3rem 0;
-            text-align: center;
-            border: 1px solid rgba(255,255,255,0.08);
-        }
-        
-        .value-list {
-            text-align: left;
-            max-width: 500px;
-            margin: 2rem auto;
-        }
-        
-        .value-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 0.75rem 0;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-            color: #9ca3af;
-        }
-        
-        .value-item:last-child {
-            border-bottom: none;
-        }
-        
-        .total-value {
-            font-size: 1.25rem;
+        .old-price {
             color: #6b7280;
             text-decoration: line-through;
-            margin-top: 1.5rem;
+            font-size: 1.25rem;
         }
         
-        .your-price {
-            font-size: 3.5rem;
+        .new-price {
+            font-size: 3rem;
             font-weight: 800;
-            color: #ffffff;
-            margin: 0.5rem 0;
+            color: #f59e0b;
         }
         
-        .price-note {
-            color: #6b7280;
-            font-size: 0.875rem;
-        }
-        
-        /* Why This Works */
-        .works-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .works-card {
-            padding: 1.5rem;
-        }
-        
-        .works-card h4 {
-            color: #818cf8;
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-        }
-        
-        .works-card p {
-            color: #9ca3af;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-        
-        /* Guarantee */
-        .guarantee-box {
-            background: rgba(16, 185, 129, 0.1);
-            border: 1px solid rgba(16, 185, 129, 0.3);
-            border-radius: 12px;
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 0;
-        }
-        
-        .guarantee-box h4 {
-            color: #34d399;
+        .cta-button {
+            display: inline-block;
+            background: #f59e0b;
+            color: white;
+            padding: 1rem 2.5rem;
             font-size: 1.125rem;
             font-weight: 600;
-            margin-bottom: 0.75rem;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
         }
         
-        .guarantee-box p {
-            color: #9ca3af;
-            font-size: 0.95rem;
-            line-height: 1.5;
+        .cta-button:hover {
+            background: #d97706;
+            transform: translateY(-2px);
+        }
+        
+        .guarantee {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: rgba(16, 185, 129, 0.1);
+            border-radius: 8px;
+            font-size: 0.875rem;
+            color: #6ee7b7;
         }
         
         /* Footer */
         .footer {
-            padding: 3rem 0;
+            padding: 2rem 0;
             text-align: center;
-            border-top: 1px solid rgba(255,255,255,0.08);
-        }
-        
-        .footer p {
+            background: #111827;
             color: #6b7280;
             font-size: 0.875rem;
         }
         
         /* Responsive */
-        @media (max-width: 768px) {
+        @media (max-width: 640px) {
             .hero h1 {
-                font-size: 2.25rem;
+                font-size: 2rem;
             }
             
-            .hero-subtitle {
-                font-size: 1.1rem;
+            .before-after {
+                grid-template-columns: 1fr;
             }
             
-            .section h2 {
-                font-size: 1.75rem;
-            }
-            
-            .value-section {
-                padding: 2rem 1.5rem;
-            }
-            
-            .your-price {
+            .new-price {
                 font-size: 2.5rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
+    <!-- Hero / Hook -->
     <section class="hero">
         <div class="container">
-            <div class="hero-label">47-Page Action Plan for Beginners</div>
-            <h1>Stop Guessing.<br><span>Start Earning.</span></h1>
-            <p class="hero-subtitle">The exact 3-step system complete newbies use to land their first $1,000+ commission checks—without paid ads, without a website, and without waiting months.</p>
-            
-            <!-- Video Placeholder -->
-            <div class="video-section">
-                <div class="video-container">
-                    <div class="video-placeholder">
-                        <div class="play-button">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"></polygon>
-                            </svg>
-                        </div>
-                        <p class="video-caption">Watch: How I Made My First $1,000 Commission</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="cta-section">
-                <a href="https://buy.stripe.com/YOUR_PAYMENT_LINK" class="cta-button">Get Instant Access — $47</a>
-                <p class="cta-note">30-Day Money-Back Guarantee • Instant Digital Delivery</p>
-            </div>
+            <div class="hero-label">True Story</div>
+            <h1>How I Went from $0 to My First $1,000 Commission in 60 Days</h1>
+            <p class="hero-subtitle">The exact system I used to escape the confusion and finally make affiliate marketing work—without paid ads, without a website, and without waiting months.</p>
         </div>
     </section>
     
-    <!-- Your Current Challenge -->
-    <section class="section section-dark">
+    <!-- Personal Story -->
+    <section class="story-section">
         <div class="container">
-            <h2>Your Current Challenge</h2>
-            <div class="challenge-grid">
-                <div class="challenge-card">
-                    <h4>Overwhelmed by Information</h4>
-                    <p>Too many gurus. Too many tactics. No clear first move. You're drowning in advice but still don't know what to actually DO.</p>
+            <p>Two years ago, I hit rock bottom. I was sitting at my kitchen table at 2 AM, staring at my laptop screen with tears in my eyes. My wife had just asked me—again—how my "online business" was going. And I had nothing to tell her.</p>
+            
+            <p>I'd spent the last six months doing everything the gurus told me to do. I bought three courses. I watched hundreds of YouTube videos. I joined every Facebook group I could find. I had notebooks full of strategies, color-coded and organized.</p>
+            
+            <p>But my affiliate dashboard? It showed the same thing every single day: $0.00.</p>
+            
+            <p>The shame was crushing. Here I was, telling my family I was building a business, and I couldn't even make a single sale. Every dinner conversation became awkward. Every question about my progress felt like a knife to the chest.</p>
+            
+            <p>I remember the exact moment everything changed. I was in yet another Facebook group, reading yet another "success story," when a comment caught my eye. Someone wrote: "Stop collecting tactics. Find one system that works and follow it to the letter."</p>
+            
+            <p>That comment saved my business—and maybe my sanity.</p>
+        </div>
+    </section>
+    
+    <!-- Transformation -->
+    <section class="transformation">
+        <div class="container">
+            <h2>The Turning Point</h2>
+            <div class="before-after">
+                <div class="before">
+                    <h4>Before</h4>
+                    <p>• Consuming content daily with zero results<br>• Notebooks full of unused strategies<br>• $0.00 in affiliate commissions<br>• Embarrassed to talk about my "business"<br>• Ready to give up</p>
                 </div>
-                <div class="challenge-card">
-                    <h4>No Implementation</h4>
-                    <p>You know affiliate marketing works, but nothing useful is actually running. You're consuming content instead of creating income.</p>
-                </div>
-                <div class="challenge-card">
-                    <h4>Lost Time + Money</h4>
-                    <p>Every day spent researching is another day without commissions. Courses pile up. Results don't show up.</p>
+                <div class="after">
+                    <h4>After</h4>
+                    <p>• First $1,000 commission in 60 days<br>• Clear, repeatable system<br>• Consistent monthly income<br>• Confidence in my business<br>• Ready to scale</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- What This Ebook Does -->
-    <section class="section section-light">
+    <!-- Mechanism -->
+    <section class="mechanism">
         <div class="container">
-            <h2>What This Ebook Does</h2>
-            <p style="text-align: center; color: #9ca3af; max-width: 700px; margin: -2rem auto 2rem;">Instead of trying to learn everything at once, you get a focused system for your first practical win.</p>
+            <h2>The Simple System That Changed Everything</h2>
+            <p class="mechanism-intro">I stopped trying to learn everything and focused on four steps that actually move the needle:</p>
             
-            <div class="steps-container">
+            <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h4>Audit Your Starting Point</h4>
-                        <p>We look at where you are right now and identify the fastest path to your first commission.</p>
+                        <h4>Pick the Right Offer</h4>
+                        <p>Not all affiliate products are created equal. I learned the 5 criteria that separate winners from duds.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h4>Pick the Best First Offer</h4>
-                        <p>Choose the highest-converting affiliate product for beginners—one that actually pays.</p>
+                        <h4>Build a Simple Funnel</h4>
+                        <p>Just 3 pages that turn visitors into buyers. No tech skills, no expensive tools, no confusion.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h4>Build Your First Funnel</h4>
-                        <p>Set up a simple 3-page system that turns visitors into buyers. No tech skills required.</p>
+                        <h4>Get Free Traffic</h4>
+                        <p>I discovered where my ideal buyers were already hanging out—and how to get in front of them for free.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h4>Get Traffic That Converts</h4>
-                        <p>Learn the free traffic methods that work for new affiliates—without paid ads or a huge following.</p>
+                        <h4>Follow Up Automatically</h4>
+                        <p>A simple email sequence that does the selling for me while I sleep.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- What's Included -->
-    <section class="section section-dark">
-        <div class="container">
-            <h2>What's Included</h2>
-            <div class="features-list">
-                <div class="feature-item">
-                    <div class="feature-check">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </div>
-                    <span>6 comprehensive training modules</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-check">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </div>
-                    <span>Niche selection framework</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-check">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </div>
-                    <span>Offer evaluation checklist</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-check">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </div>
-                    <span>3-page funnel templates</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-check">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </div>
-                    <span>Free traffic generation guide</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-check">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </div>
-                    <span>Email sequence templates</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-check">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </div>
-                    <span>Scaling roadmap</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-check">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </div>
-                    <span>Affiliate Action Checklist bonus</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Value Stack -->
-    <section class="section section-light">
-        <div class="container">
-            <div class="value-section">
-                <h2>Your Investment</h2>
-                <div class="value-list">
-                    <div class="value-item">
-                        <span>6 Training Modules</span>
-                        <span>$397</span>
-                    </div>
-                    <div class="value-item">
-                        <span>Funnel Templates</span>
-                        <span>$97</span>
-                    </div>
-                    <div class="value-item">
-                        <span>Email Sequences</span>
-                        <span>$67</span>
-                    </div>
-                    <div class="value-item">
-                        <span>Action Checklist</span>
-                        <span>$47</span>
-                    </div>
-                </div>
-                <p class="total-value">Total Value: $608</p>
-                <p class="your-price">$47</p>
-                <p class="price-note">One-time payment. Lifetime access.</p>
-                <a href="https://buy.stripe.com/YOUR_PAYMENT_LINK" class="cta-button" style="margin-top: 1.5rem;">Get Instant Access</a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Why This Works -->
-    <section class="section section-dark">
-        <div class="container">
-            <h2>Why This Works</h2>
-            <p style="text-align: center; color: #9ca3af; max-width: 700px; margin: -2rem auto 2rem;">Most beginners don't need to master everything. They need one useful system that creates proof, momentum, and confidence.</p>
-            
-            <div class="works-grid">
-                <div class="works-card">
-                    <h4>Fast First Win</h4>
-                    <p>This system is built around one practical commission, not a giant complicated business. Get proof fast.</p>
-                </div>
-                <div class="works-card">
-                    <h4>Implementation, Not Theory</h4>
-                    <p>You get something working—not another course full of ideas you never use. Step-by-step execution.</p>
-                </div>
-                <div class="works-card">
-                    <h4>Expandable After Success</h4>
-                    <p>Once the first workflow is live, it becomes easier to add more offers and scale your income.</p>
                 </div>
             </div>
             
-            <div class="guarantee-box">
-                <h4>30-Day "Make It Work" Guarantee</h4>
-                <p>Download the ebook, implement the strategies, and if you don't feel confident about your path to your first commission within 30 days, I'll refund every penny. No questions asked.</p>
-            </div>
+            <p style="text-align: center; color: #6b7280; margin-top: 2rem;">That's it. No complex strategies. No expensive ads. Just a simple system that works.</p>
         </div>
     </section>
     
-    <!-- Final CTA -->
-    <section class="section section-light" style="text-align: center;">
+    <!-- The Offer -->
+    <section class="offer">
         <div class="container">
-            <h2>Ready to Stop Guessing?</h2>
-            <p style="color: #9ca3af; max-width: 600px; margin: -2rem auto 2rem;">Every day you wait is another day without commissions. Get the clarity you need to start earning.</p>
-            <a href="https://buy.stripe.com/YOUR_PAYMENT_LINK" class="cta-button" style="font-size: 1.25rem; padding: 1.5rem 4rem;">Get Affiliate Revenue Avalanche — $47</a>
-            <p style="color: #6b7280; margin-top: 1.5rem; font-size: 0.875rem;">Instant access • 30-day guarantee • Lifetime updates</p>
+            <h2>Get the Complete System</h2>
+            <p class="offer-subtitle">Everything I learned—the exact roadmap I wish I had from day one.</p>
+            
+            <div class="offer-box">
+                <div class="offer-list">
+                    <div class="offer-item">
+                        <div class="check-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <span>47-page Affiliate Revenue Avalanche ebook</span>
+                    </div>
+                    <div class="offer-item">
+                        <div class="check-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <span>6 comprehensive training modules</span>
+                    </div>
+                    <div class="offer-item">
+                        <div class="check-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <span>3-page funnel templates</span>
+                    </div>
+                    <div class="offer-item">
+                        <div class="check-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <span>Email sequence templates</span>
+                    </div>
+                    <div class="offer-item">
+                        <div class="check-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <span>Affiliate Action Checklist</span>
+                    </div>
+                </div>
+                
+                <div class="price-row">
+                    <div class="old-price">$608 Value</div>
+                    <div class="new-price">$47</div>
+                </div>
+                
+                <a href="https://buy.stripe.com/YOUR_PAYMENT_LINK" class="cta-button">Get Instant Access</a>
+                
+                <div class="guarantee">
+                    30-Day Money-Back Guarantee • Instant Digital Delivery
+                </div>
+            </div>
         </div>
     </section>
     
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2025 Affiliate Revenue Avalanche. All rights reserved.</p>
+            <p>© 2025 Affiliate Revenue Avalanche. Your success story starts here.</p>
         </div>
     </footer>
 </body>
